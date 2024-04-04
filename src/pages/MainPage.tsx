@@ -52,7 +52,7 @@ const MainPage = () => {
           bgcolor: 'background.paper',
           display: 'flex',
           height: 224,
-          width: 1000,
+          maxWidth: 1000,
           justifyContent: 'center',
           margin: '0 auto'
         }}
@@ -74,13 +74,13 @@ const MainPage = () => {
           }}
         >
           <TabPanel value={value} index={0}>
-            <RequestLink />
+            <RequestLink reviewElement={0}/>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            Item Two
+            <RequestLink reviewElement={1}/>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            Item Three
+            <RequestLink reviewElement={2}/>
           </TabPanel>
         </Box>
       </Box>

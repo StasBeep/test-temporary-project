@@ -112,11 +112,6 @@ export default function Example() {
             Company
           </NavLink>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink to="/oops" className="text-sm font-semibold leading-6 text-gray-900">
-            Пойти нахуй <span aria-hidden="true">&rarr;</span>
-          </NavLink>
-        </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -184,14 +179,6 @@ export default function Example() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Company
-                </NavLink>
-              </div>
-              <div className="py-6">
-                <NavLink
-                  to="/oops"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Пойти нахуй
                 </NavLink>
               </div>
             </div>
